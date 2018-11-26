@@ -1,0 +1,182 @@
+@charset "utf-8";
+/* CSS Document */
+html {
+  scroll-behavior: smooth;
+}
+
+@-webkit-keyframes gradient {
+    0%{background-position:96% 0%}
+    50%{background-position:5% 100%}
+    100%{background-position:96% 0%}
+}
+@-moz-keyframes gradient {
+    0%{background-position:96% 0%}
+    50%{background-position:5% 100%}
+    100%{background-position:96% 0%}
+}
+@keyframes gradient { 
+    0%{background-position:96% 0%}
+    50%{background-position:5% 100%}
+    100%{background-position:96% 0%}
+}
+
+@-webkit-keyframes gray {
+    0%{background-position:50% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:50% 0%}
+}
+@-moz-keyframes gray {
+    0%{background-position:50% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:50% 0%}
+}
+@keyframes gray { 
+    0%{background-position:50% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:50% 0%}
+}
+
+@-webkit-keyframes purple {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes purple {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes purple { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+@-moz-keyframes slide {
+	0%{background-position:0% 0%}
+    50%{background-position:0% 50%}
+	100%{background-position:0% 0%}
+}
+
+@-webkit-keyframes slide {
+	0%{background-position:0% 0%}
+    50%{background-position:0% 50%}
+	100%{background-position:0% 0%}
+}
+
+@keyframes slide {
+	0%{background-position:0px 0px}
+    100%{background-position:150px 150px}
+
+}
+
+@keyframes float {
+	0%{width: 800px; height: 400px;}
+	50%{width: 808px; height: 404px;}
+	100%{width: 800px; height: 400px;}
+}
+@-webkit-keyframes float {
+	0%{right: 0px; top: 0px; left: 0px; bottom: 0px;}
+	25%{right: 5px; top: 5px; left: 0px; bottom: 0px;}
+	50%{right: 0px; top: 0px; left: 0px; bottom: 0px;}
+	75%{right: 0px; top: 0px; left: 5px; bottom: 5px;}
+	100%{right: 0px; top: 0px; left: 0px; bottom: 0px;}
+}
+@-moz-keyframes float {
+	0%{right: 0px; top: 0px; left: 0px; bottom: 0px;}
+	25%{right: 5px; top: 5px; left: 0px; bottom: 0px;}
+	50%{right: 0px; top: 0px; left: 0px; bottom: 0px;}
+	75%{right: 0px; top: 0px; left: 5px; bottom: 5px;}
+	100%{right: 0px; top: 0px; left: 0px; bottom: 0px;}
+}
+
+body{
+	background-color:#FD616B;
+}
+
+.purple{
+	background: linear-gradient(270deg, #ff0444, #FFF019, #149DCC);
+	background-size: 400% 400%;
+
+	-webkit-animation: purple 30s ease infinite;
+	-moz-animation: purple 30s ease infinite;
+	animation: purple 30s ease infinite;
+	width: 100%;
+}
+
+.rainbow{
+background: linear-gradient(213deg, #ff003c, #c500e5, #00a8e5, #01e34f, #e7f700, #ffc32f, #ff3e13, #ff69cb);
+background-size: 1600% 1600%;
+	
+-webkit-animation: gradient 12s ease infinite;
+-moz-animation: gradient 12s ease infinite;
+animation: gradient 12s ease infinite;
+}
+
+.b-img{
+	width: 150px;
+	height: 150px;
+	filter: grayscale(0%);
+}
+
+.sb-img{
+	width: 100px;
+	height: 100px;
+	filter: grayscale(0%);
+}
+
+.pattern{
+	background-image: url( ../img/pattern2.png);
+	background-size: 150px 150px;
+	-webkit-animation: slide 4.5s linear infinite;
+	-moz-animation: slide 4.5s linear infinite;
+	animation: slide 4.5s linear infinite;
+}
+
+#main-container{
+	background-color: whitesmoke;
+	
+}
+
+#ef{
+	margin: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+#ghbutt{
+	border: solid #ADADAD;
+	background: #ADADAD;
+	padding: 10px 160px;
+	color: black;
+}
+#ghbutt:hover{
+	background: linear-gradient(0deg, #ff0444, #149DCC);
+	background-size: 400% 400%;
+	
+	-webkit-animation: gradient 2s ease infinite;
+	-moz-animation: gradient 2s ease infinite;
+	animation: gradient 2s ease infinite;
+	text-decoration: none;
+	color: white;
+	border: solid #E9E9E9;
+	padding: 15px 165px;
+}
+
+#logo{
+	width: 40px;
+	height: 40px;
+}
+
+#navb{
+	background-color:#DDDDDD;
+}
+
+#footer{
+	background-color:#DDDDDD;
+}
+
+#mail{
+	font-size: 24px;
+	color:deeppink;
+}
